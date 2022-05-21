@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather dashboard</title>
+  </head>
+
+  <body>
+    <header class="jumbotron title_container">
+      <h1 class="display-5">Weather Dashboard</h1>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div>
+      <div class="row body_container">
+        <div class="col-2 search_container">
+          <div class="search_form">
+            <form onsubmit="event.preventDefault()">
+              <div class="mb-3">
+                <p class="h3">Search for a City:</p>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="city_title" />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onclick="searchCity()"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="search_history" id="search_history"></div>
+        </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="current_weather">
+              <h2 class="display-5">
+                <span id="city_name">--</span>
+                <span id="icon"
+                  ><img
+                    id="wicon"
+                    style="display: none"
+                    src=""
+                    alt="Weather icon"
+                /></span>
+              </h2>
+              <h4 class="display-6 w_info">
+                Temp: <span id="temp_val">--</span> &#176;F
+              </h4>
+              <h4 class="display-6 w_info">
+                Wind: <span id="wind_val">--</span> MPH
+              </h4>
+              <h4 class="display-6 w_info">
+                Humidity: <span id="humidity_val">--</span> %
+              </h4>
+              <h4 class="display-6 w_info">
+                UV Index: <span class="w_info_uv" id="uv_val">--</span>
+              </h4>
+            </div>
+          </div>
+          <div id="forecast_container" style="display: none">
+            <h3 class="display-6 title_forecast">5-Day Forecast:</h3>
+            <div class="row" id="forecast_data"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- https://api.openweathermap.org/data/2.5/weather?appid=88e6d976543dacc37924cf1cde399684&q=austIn -->

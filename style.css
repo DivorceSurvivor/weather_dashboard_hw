@@ -1,0 +1,97 @@
+.title_container {
+  text-align: center;
+  padding: 5px 0px;
+  border-radius: 0px;
+  color: white;
+  background: rgb(41, 29, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(41, 29, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 52%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.search_container {
+  padding: 0px 30px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.search_history {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px black solid;
+}
+
+.history-city {
+  background-color: rgb(199, 199, 199);
+  color: black;
+  border: none;
+  margin: 10px 0px;
+}
+
+.w_info {
+  padding: 8px 0px;
+  font-weight: 400;
+}
+
+.w_info_uv {
+  font-size: 20px;
+  padding: 6px 16px;
+  border-radius: 8px;
+}
+
+.bg_green {
+  color: white;
+  background-color: green;
+}
+
+.bg_yellow {
+  color: black;
+  background-color: yellow;
+}
+
+.bg_orange {
+  color: white;
+  background-color: orange;
+}
+
+.bg_red {
+  color: white;
+  background-color: red;
+}
+
+.bg_violet {
+  color: white;
+  background-color: violet;
+}
+
+.current_weather {
+  width: 100%;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.body_container {
+  margin: 0px;
+}
+
+.title_forecast {
+  margin: 20px auto;
+}
+
+.forecast_container {
+  background-color: #2d3e50;
+  margin-right: 50px;
+  border-radius: 6px;
+}
+
+.f_info {
+  color: white;
+  padding: 8px 0px;
+  font-weight: 400;
+}
